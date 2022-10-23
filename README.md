@@ -9,7 +9,7 @@ Steps to compose docker file :
 * Step 1 : Install docker for windows 
 * Step 2 : After installing docker clone the repo
 * Step 3 : copy repo in any path or rename folder (E.g copy in C drive and rename it as zapplin)
-* Step 4 : Create the logs and notebook folder if not present already.
+* Step 4 : Create the `logs` and `notebook` folders in same directory if not present already.
 * Step 5: Open command prompt in the zapplin folder and use below command to compose docker file : 
 <br>
  <b><div>docker compose -f docker-compose.yaml up -d </div></b>
