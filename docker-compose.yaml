@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  zapplean:
+    image: "apache/zeppelin:0.10.1"
+
+    ports:
+      - "8080:8080"
+      - "4040:4040"
+
+    volumes:
+      - C:\spark:/opt/spark
+      - ./logs:/logs
+      - ./notebook:/notebook
+
+    environment:
+      SPARK_HOME: /opt/spark
+      ZEPPELIN_LOG_DIR: /logs
+      ZEPPELIN_NOTEBOOK_DIR: /notebook
